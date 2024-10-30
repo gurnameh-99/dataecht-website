@@ -47,7 +47,9 @@ const Home: FC = () => {
         <h2 className="text-5xl sm:text-8xl font-semibold animate-stroke">Coming Soon</h2>
       </main>
       <footer className="p-2 sm:p-4 text-center text-xs sm:text-sm opacity-75 animate-fadeIn absolute bottom-5">
-        <p>Email: founder@dataecht.com</p>
+        {/*on clicking mail redirect to mail*/}
+
+        <p><a href="mailto:founder@dataecht.com">founder@dataecht.com</a></p>
       </footer>
       <style jsx global>{`
         @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
