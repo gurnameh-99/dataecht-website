@@ -1,4 +1,4 @@
-"use client"; // Treat this entire component as a client component
+"use client";
 
 import Head from 'next/head';
 import { FC, useEffect, useRef } from 'react';
@@ -33,7 +33,7 @@ const Home: FC = () => {
   }, []);
 
   return (
-    <div className="container bg-black text-white font-poppins overflow-hidden relative">
+    <div className="container bg-black text-white font-poppins overflow-hidden flex items-center justify-center min-h-screen">
       <Head>
         <title>DataEcht - Coming Soon</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -46,7 +46,7 @@ const Home: FC = () => {
       {/* Mouse trail container */}
       <div ref={trailContainerRef} className="trail-container absolute inset-0 pointer-events-none"></div>
 
-      <main className="flex flex-col items-center justify-center text-center z-10 w-full h-full">
+      <main className="flex flex-col items-center justify-center text-center w-full">
         <h1 className="text-3xl md:text-4xl font-bold mb-6">DataEcht</h1>
 
         {/* SVG Text Animation for "Coming Soon" */}
@@ -57,7 +57,7 @@ const Home: FC = () => {
         </svg>
       </main>
       <footer className="absolute bottom-5 w-full text-center text-sm opacity-75 animate-fadeIn">
-        <p>Email: founder@dataecht.com</p>
+        <p>founder@dataecht.com</p>
       </footer>
       <style jsx global>{`
         .container {
@@ -81,7 +81,7 @@ const Home: FC = () => {
         }
 
         .text-line text {
-          font-size: clamp(8vw, 10vw, 100px);
+          font-size: clamp(6vw, 8vw, 80px);
           font-family: Helvetica, Arial, sans-serif;
           font-weight: normal;
           font-style: normal;
